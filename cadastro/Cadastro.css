@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "Audiowide", "Trebuchet MS", sans-serif;
+  background-image: url("../assets/funco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.pagina-autenticacao {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.painel-autenticacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+  background: linear-gradient(135deg, #0011ff 0%, #ff0101 100%);
+  border: 6px double #ffffff;
+  color: #FFEE00;
+  width: min(800px, 95vw);
+  height: 600px;
+}
+
+.titulo-autenticacao {
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+.titulo-autenticacao h1 {
+  font-family: "Audiowide", "Trebuchet MS", sans-serif;
+}
+
+#email-cadastro,
+#senha-cadastro,
+#confirmacao-senha,
+#apelido,
+#idade {
+  width: 200px;
+  height: 50px;
+}
+
+#genero {
+  width: 200px;
+  height: 50px;
+  padding: 12px;
+  background-color: #FFEE00;
+  color: #1e00fe;
+  border: 1px solid #444444;
+  font-family: inherit;
+}
+
+#botao-cadastro {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: #4fffff;
+  color: #ff00d0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .painel-autenticacao {
+    height: auto;
+    min-height: 600px;
+    padding: 40px 0;
+  }
+}
+
+input {
+  background-color: #FFEE00;
+  color: #0000ff;
+  padding: 12px;
+  border: 1px solid #444444;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #0004ff;
+  background-color: #FFEE00;
+}
+
+#mensagem-erro {
+  color: red;
+}
+
+.link-login {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.acoes-cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+a {
+  color: #FFEE00;
+}
